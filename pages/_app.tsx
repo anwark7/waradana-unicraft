@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	return (
 		<>
 			<Head>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/logo.png" />
 				<meta name="theme-color" content="#000000" />
 			</Head>
 			<ProgressBar
