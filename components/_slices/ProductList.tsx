@@ -19,7 +19,7 @@ const ProductList = ({slice}: Props): JSX.Element => {
 						<RenderSlice slice={slice} key={index}/>
 					))}
 					<div className="flex-cc md:flex-bs gap-6 col w-full md:w-7/12">
-						<p className="text-primary font-bold text-4xl sm:text-7xl">
+						<p className="text-primary font-bold text-4xl sm:text-5xl">
 							{item.content.data.title}
 						</p>
 						<p className="!text-primary-lighter font-bold text-sm sm:text-base md:text-lg lg:text-2xl">
