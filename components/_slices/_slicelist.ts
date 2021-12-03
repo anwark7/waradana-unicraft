@@ -10,6 +10,7 @@ import Navbar from './layout/Navbar';
 import Parallax from './Parallax';
 import ProductOverview from './ProductOverview';
 import History from './History';
+import VisiMisi from './VisiMisi';
 
 // Don't forget to register your components below
 
@@ -23,4 +24,5 @@ export default {
 	Parallax,
 	ProductOverview,
 	History,
+	VisiMisi,
 };
