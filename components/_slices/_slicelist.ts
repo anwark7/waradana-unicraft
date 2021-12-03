@@ -13,6 +13,7 @@ import History from './History';
 import VisiMisi from './VisiMisi';
 import Collaborate from './Collaborate';
 import ProductList from './ProductList';
+import Caraousel from './Caraousel';
 
 // Don't forget to register your components below
 
@@ -29,4 +30,5 @@ export default {
 	VisiMisi,
 	Collaborate,
 	ProductList,
+	Caraousel,
 };
