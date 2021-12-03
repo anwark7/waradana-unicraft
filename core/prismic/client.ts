@@ -19,6 +19,13 @@ export const queryLayout = (uid: string): Promise<LayoutContentType> => {
 		.catch(() => null);
 };
 
+export const queryProductById = (uid: string): Promise<LayoutContentType> => {
+	return client
+		.query(Prismic.Predicates.at('my.products.uid', uid))
+		.then((res) => res.results[0])
+		.catch(() => null);
+};
+
 export default client;
 
 export interface SliceType {
