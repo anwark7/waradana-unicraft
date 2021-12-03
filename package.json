@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@prismicio/client": "^5.1.0",
+		"flickity": "^2.2.2",
 		"next": "^11.1.0",
 		"nextjs-progressbar": "^0.0.8",
 		"prismic-reactjs": "^1.3.4",
