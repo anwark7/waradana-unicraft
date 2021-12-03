@@ -1,11 +1,20 @@
 module.exports = {
 	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+	mode: 'jit',
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
 				base: '#ffffff',
-				primary: '#3b3b3b',
+				background: '#FDFDFD',
+				primary: {
+					DEFAULT: '#7D5A50',
+					lighter: '#B4846C',
+				},
+				secondary: {
+					DEFAULT: '#FCDEC0',
+					darker: '#E5B299',
+				},
 				accent: '#FF5B14',
 				info: '#2DA7FB',
 				warning: '#FFCB11',
@@ -13,7 +22,7 @@ module.exports = {
 				success: '#67db8e',
 			},
 			fontFamily: {
-				main: 'ProximaNova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+				main: 'Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 			},
 			fontSize: {
 				'4.5xl': '2.73rem',
