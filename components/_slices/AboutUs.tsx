@@ -23,8 +23,11 @@ const AboutUs = ({slice}: Props): JSX.Element => {
 				))}
 			</div>
 			<div className="flex-cc -md:col gap-8 md:h-96">
-				<img className="w-full md:w-5/12 h-full" src={slice.primary.image.url} alt={slice.primary.image.alt} />
-				<div className="flex-cc md:flex-bs h-full col">
+				<div 
+					style={{backgroundImage: `url(${slice.primary.image.url})`}}
+					className="w-full md:w-1/2 h-full -md:pb-[100%] bg-cover bg-center">
+				</div>
+				<div className="w-full flex-cc md:flex-bs h-full col">
 					<p className="text-primary-lighter text-sm md:text-lg lg:text-2xl">{RichText.asText(slice.primary.description)}</p>
 					<Link href={'/about'} className="py-2 sm:py-3 md:py-4 px-4 sm:px-5 md:px-6 rounded-2xl bg-secondary font-bold text-primary text-xs sm:text-lg md:text-2xl">
 						{slice.primary.button_text}
