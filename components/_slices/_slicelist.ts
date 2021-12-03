@@ -9,6 +9,7 @@ import Footer from './layout/Footer';
 import Navbar from './layout/Navbar';
 import Parallax from './Parallax';
 import ProductOverview from './ProductOverview';
+import History from './History';
 
 // Don't forget to register your components below
 
@@ -21,4 +22,5 @@ export default {
 	ContactUs,
 	Parallax,
 	ProductOverview,
+	History,
 };
