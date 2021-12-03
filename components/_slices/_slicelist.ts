@@ -12,6 +12,7 @@ import ProductOverview from './ProductOverview';
 import History from './History';
 import VisiMisi from './VisiMisi';
 import Collaborate from './Collaborate';
+import ProductList from './ProductList';
 
 // Don't forget to register your components below
 
@@ -27,4 +28,5 @@ export default {
 	History,
 	VisiMisi,
 	Collaborate,
+	ProductList,
 };
