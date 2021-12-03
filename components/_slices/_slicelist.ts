@@ -14,6 +14,7 @@ import VisiMisi from './VisiMisi';
 import Collaborate from './Collaborate';
 import ProductList from './ProductList';
 import Caraousel from './Caraousel';
+import Form from './Form';
 
 // Don't forget to register your components below
 
@@ -31,4 +32,5 @@ export default {
 	Collaborate,
 	ProductList,
 	Caraousel,
+	Form,
 };
