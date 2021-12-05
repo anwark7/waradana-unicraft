@@ -13,7 +13,7 @@ const History = ({slice}: Props): JSX.Element => {
 	
 	return (
 		<section className="flex-cc col bg-background w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32">
-			<h1 className="font-bold text-primary text-2xl md:text-5xl xl:text-6xl">{slice.primary.title}</h1>
+			<h1 className="font-bold text-primary text-3xl md:text-5xl xl:text-6xl">{slice.primary.title}</h1>
 			<div className="flex-cc w-full -md:col gap-8 my-16 md:h-96">
 				<div 
 					style={{backgroundImage: `url(${slice.primary.image.url})`}}
