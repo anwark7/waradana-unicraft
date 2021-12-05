@@ -13,7 +13,7 @@ const AboutUs = ({slice}: Props): JSX.Element => {
 	
 	return (
 		<section className="flex-cc col bg-background w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32">
-			<h1 className="font-bold text-primary text-2xl md:text-5xl xl:text-6xl">{slice.primary.title}</h1>
+			<h1 className="font-bold text-primary text-3xl md:text-5xl xl:text-6xl">{slice.primary.title}</h1>
 			<div className="flex-vc w-full my-8 md:my-12">
 				{slice.items.map((item, index) => (
 					<div className="flex-cc col gap-4" key={index}>
