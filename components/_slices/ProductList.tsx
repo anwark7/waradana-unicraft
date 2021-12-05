@@ -14,7 +14,7 @@ const ProductList = ({slice}: Props): JSX.Element => {
 	return (
 		<section className="flex-cc col gap-16 bg-secondary w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32">
 			{slice.items.map((item, index) => (
-				<div className="flex-vs gap-12 -md:col w-full" key={index}>
+				<div className="flex-vs gap-6 -md:col w-full" key={index}>
 					{item.content.data.body.map((slice, index) => (
 						<RenderSlice slice={slice} key={index}/>
 					))}
