@@ -15,14 +15,14 @@ const Footer = ({slice}: Props): JSX.Element => {
 	
 	return (
 		<section className="flex-bs w-full px-4 py-8 md:px-10 md:py-10 xl:px-12 xl:py-12 bg-secondary">
-			<div className="flex-cs w-1/2">
+			<div className="flex-cs w-1/2 gap-4">
 				<img className="h-[90px] md:h-[120px] xl:h-[150px] 2xl:h-[200px]" src={slice.primary.logo.url} alt={slice.primary.logo.alt} />
-				<div className="flex-sc col">
+				<div className="flex-ss col gap-4">
 					<h4 className="font-bold text-primary text-sm sm:text-lg xl:text-2xl">About Us</h4>
 					<p className="font-bold !text-primary-lighter text-xs sm:text-base xl:text-lg">{RichText.asText(slice.primary.description)}</p>
 				</div>
 			</div>
-			<div className="flex-cs -sm:col gap-4">
+			<div className="flex-cs -md:flex-ce -md:col gap-4">
 				<div className="flex justify-end col gap-4">
 					<p className="font-bold text-primary text-sm sm:text-lg xl:text-2xl whitespace-nowrap text-right">Social Media</p>
 					<div className="flex justify-end md:col">
@@ -43,14 +43,14 @@ const Footer = ({slice}: Props): JSX.Element => {
 				<div className="flex justify-end col gap-4">
 					<p className="font-bold text-primary text-sm sm:text-lg xl:text-2xl text-right">Contact</p>
 					<div className="flex justify-end md:col">
-						<div className="flex-ec gap-2">
+						<Link href={`https://api.whatsapp.com/send?phone=62${(slice.primary.phone).substring(1)}`} className="flex-ec gap-2">
 							<p className="-md:hidden !text-primary-lighter text-xs sm:text-base xl:text-lg">{slice.primary.phone}</p>
 							<FaWhatsappSquare className="text-primary" size={40}/> 
-						</div>
-						<div className="flex-ec gap-2">
+						</Link>
+						<Link href={`mailto:${slice.primary.email}`} className="flex-ec gap-2">
 							<p className="-md:hidden !text-primary-lighter text-xs sm:text-base xl:text-lg">{slice.primary.email}</p>
 							<MdEmail className="text-primary" size={40}/> 
-						</div>
+						</Link>
 					</div>
 				</div>
 			</div>
