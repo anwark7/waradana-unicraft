@@ -27,7 +27,7 @@ const ContactUs = ({slice}: Props): JSX.Element => {
 				</Link>
 				<div className="flex-cc sm:col gap-4">
 					<FaMapMarkedAlt className="text-primary" size={70}/>
-					<p className="text-primary-lighter text-lg md:text-2xl w-56 text-center">{slice.primary.address}</p>
+					<p className="text-primary-lighter text-lg md:text-2xl w-56 text-center break-words">{slice.primary.address}</p>
 				</div>
 			</div>
 			<Link href={'/contact'} className="flex-cc w-full h-20 mt-10 rounded-2xl bg-primary font-bold text-secondary text-lg sm:text-2xl lg:text-3xl">
