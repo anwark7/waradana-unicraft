@@ -22,7 +22,7 @@ module.exports = {
 				success: '#67db8e',
 			},
 			fontFamily: {
-				main: 'Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+				main: 'Lato, ProximaNova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 			},
 			fontSize: {
 				'4.5xl': '2.73rem',
