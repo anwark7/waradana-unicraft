@@ -20,7 +20,7 @@ const History = ({slice}: Props): JSX.Element => {
 					className="w-full md:w-1/2 h-full -md:pb-[100%] bg-cover bg-center">
 				</div>
 				<div className="w-full flex-cc md:flex-bs h-full col">
-					<p className="text-primary-lighter text-sm md:text-lg lg:text-2xl">{RichText.asText(slice.primary.description)}</p>
+					<p className="text-primary-lighter text-center md:text-left font-semibold text-lg lg:text-2xl">{RichText.asText(slice.primary.description)}</p>
 				</div>
 			</div>
 		</section>
