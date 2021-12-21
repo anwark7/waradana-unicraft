@@ -13,7 +13,7 @@ const VisiMisi = ({slice}: Props): JSX.Element => {
 	return (
 		<section 
 			style={{backgroundImage: `url(${slice.primary.background_image.url})`}}
-			className="flex-vs -md:col bg-background w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32 bg-cover bg-center">
+			className="flex-vs -md:col gap-8 md:gap-0 bg-background w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32 bg-cover bg-center">
 			<div className="flex-cc col gap-4 w-full md:w-1/3">
 				<img className="h-[160px] 2xl:h-[200px]" src={slice.primary.visi_image.url} alt={slice.primary.visi_image.alt} />
 				<h2 className="font-bold text-white text-2xl sm:text-4xl 2xl:text-5xl text-center">{slice.primary.visi_title}</h2>
