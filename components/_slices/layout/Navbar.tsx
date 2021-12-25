@@ -11,7 +11,6 @@ const Navbar = ({slice}: Props): JSX.Element => {
 	const [onScroll, setOnScroll] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(false);
 
-	console.log(openDropdown);
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			if (window.scrollY) {
