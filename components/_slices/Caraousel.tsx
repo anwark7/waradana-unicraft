@@ -1,6 +1,5 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import Flickity from 'react-flickity-component';
 
 
@@ -20,7 +19,6 @@ const flickityOptions = {
 };
 
 const Caraousel = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section className="flex-cc w-full md:w-5/12 overflow-hidden">

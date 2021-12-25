@@ -1,6 +1,5 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import { RichText } from 'prismic-reactjs';
 
 interface Props {
@@ -8,7 +7,6 @@ interface Props {
 }
 
 const VisiMisi = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section 

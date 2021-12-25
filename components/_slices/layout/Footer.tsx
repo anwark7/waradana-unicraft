@@ -1,6 +1,5 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import { RichText } from 'prismic-reactjs';
 import { MdEmail } from 'react-icons/md';
 import { FaWhatsappSquare, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa';
@@ -11,7 +10,6 @@ interface Props {
 }
 
 const Footer = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section className="flex-cc -md:col md:flex-bs gap-8 md:gap-0 w-full px-4 py-8 md:px-10 md:py-10 xl:px-12 xl:py-12 bg-secondary">

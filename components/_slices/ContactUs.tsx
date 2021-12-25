@@ -1,6 +1,5 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import { MdEmail } from 'react-icons/md';
 import { FaWhatsappSquare, FaMapMarkedAlt } from 'react-icons/fa';
 import Link from '@components/_shared/Link';
@@ -11,7 +10,6 @@ interface Props {
 }
 
 const ContactUs = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section className="flex-cc col bg-background w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32">

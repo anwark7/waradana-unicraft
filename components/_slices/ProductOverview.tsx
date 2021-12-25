@@ -1,6 +1,5 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import Link from '@components/_shared/Link';
 
 interface Props {
@@ -8,7 +7,6 @@ interface Props {
 }
 
 const ProductOverview = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section className="flex-cc col bg-secondary w-full py-10 md:py-16 xl:py-24 2xl:py-28 px-6">

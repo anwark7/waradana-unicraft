@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import { MdEmail } from 'react-icons/md';
 import { FaWhatsappSquare, FaMapMarkedAlt } from 'react-icons/fa';
 import useForm from '@core/hooks/useForm';
@@ -13,7 +12,6 @@ interface Props {
 }
 
 const Form = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	const [loading, setLoading] = useState(false);
 
 	const { form, setForm} = useForm({

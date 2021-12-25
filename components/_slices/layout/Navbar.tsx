@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 import Link from '@components/_shared/Link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -9,7 +8,6 @@ interface Props {
 }
 
 const Navbar = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	const [onScroll, setOnScroll] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(false);
 

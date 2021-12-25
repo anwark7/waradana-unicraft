@@ -1,13 +1,11 @@
 import React from 'react';
 import { SliceType } from '@core/prismic/client';
-import useDebug from '@core/hooks/useDebug';
 
 interface Props {
 	slice: SliceType
 }
 
 const Hero = ({slice}: Props): JSX.Element => {
-	useDebug(slice);
 	
 	return (
 		<section
