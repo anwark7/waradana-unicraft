@@ -8,7 +8,8 @@
 		"build": "next build",
 		"start": "next start",
 		"check": "prettier -c .",
-		"format": "prettier -w ."
+		"format": "prettier -w .",
+		"export": "next export"
 	},
 	"dependencies": {
 		"@prismicio/client": "^5.1.0",
