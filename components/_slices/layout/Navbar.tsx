@@ -25,7 +25,7 @@ const Navbar = ({slice}: Props): JSX.Element => {
 		<div className="fixed top-0 z-50 transition-all duration-200 w-full">
 			<section
 				className={`flex-bc 
-			${onScroll ? 'bg-primary border-b-4 border-[#B4846C] text-secondary' : 'bg-transparent text-white'} 
+			${onScroll ? 'bg-primary border-b-4 border-[#B4846C] text-secondary' : 'bg-transparent text-primary'} 
 			py-4 md:py-5 px-12 sm:px-13 md:px-24 lg:px-28 xl:px-32`}>
 				<Link href={'/'} className="h-16 md:h-20">
 					<img className="h-full" src={slice.primary.logo.url} alt={slice.primary.logo.alt} />
@@ -35,6 +35,7 @@ const Navbar = ({slice}: Props): JSX.Element => {
 					<Link href={'/about'} className="hover:text-[#B4846C] hover:cursor-pointer font-bold text-lg 2xl:text-xl">About</Link>
 					<Link href={'/product'} className="hover:text-[#B4846C] hover:cursor-pointer font-bold text-lg 2xl:text-xl">Product</Link>
 					<Link href={'/contact'} className="hover:text-[#B4846C] hover:cursor-pointer font-bold text-lg 2xl:text-xl">Contact</Link>
+					<Link href={'/team'} className="hover:text-[#B4846C] hover:cursor-pointer font-bold text-lg 2xl:text-xl">Team</Link>
 				</div>
 				<div onClick={() => {setOpenDropdown(!openDropdown);}} className="md:hidden">
 					<GiHamburgerMenu className={`${onScroll ? 'text-secondary hover:cursor-pointer' : 'text-primary hover:cursor-pointer'}`} size={40}/>
@@ -45,6 +46,7 @@ const Navbar = ({slice}: Props): JSX.Element => {
 				<Link href={'/about'} className="hover:text-[#B4846C] font-bold">About</Link>
 				<Link href={'/product'} className="hover:text-[#B4846C] font-bold">Product</Link>
 				<Link href={'/contact'} className="hover:text-[#B4846C] font-bold">Contact</Link>
+				<Link href={'/team'} className="hover:text-[#B4846C] font-bold">Team</Link>
 			</div>
 		</div>
 	);
