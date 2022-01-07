@@ -15,6 +15,7 @@ import Collaborate from './Collaborate';
 import ProductList from './ProductList';
 import Caraousel from './Caraousel';
 import Form from './Form';
+import TeamMember from './TeamMember';
 
 // Don't forget to register your components below
 
@@ -33,4 +34,5 @@ export default {
 	ProductList,
 	Caraousel,
 	Form,
+	TeamMember,
 };
